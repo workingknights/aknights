@@ -1,0 +1,26 @@
+.site-wrapper-inner {
+	color: white;
+  background-image: url(/images/water.jpg);
+	height: 280px;
+  width: 100%;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-position: 50% 45%;
+  position: relative;
+}
+
+.nav-link {
+	/*font-weight: bold;*/
+}
+
+nav {
+	background-color: white;
+}
+
+nav i {
+	color: #666;
+}
+
+.page-container {
+	padding-top: 10px;
+}
