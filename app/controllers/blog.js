@@ -2,29 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-	// getMonth(model) {
-	// 	return model.get('month');
-	// },
-	// archiveMonths: Ember.computed.map('model', function(model) {
-	// 	return this.getMonth(model);
-	// }),
-	// months: Ember.computed('model', function() {
-	// 	var uniqMths = [];
-	//
-	// 	this.model.forEach(function(entry){
-	// 		var month = entry.get('month');
-	// 		var id = entry.get('id');
-  //     // var hasMonth = !!uniqMths.includes(month);
-  //     if (!uniqMths.includes(month)) {
-  //       uniqMths.push({month: month, id: id});
-  //     }
-	// 		else {
-	//
-	// 		}
-	// 	});
-	//
-	// 	return uniqMths;
-	// }),
 	monthGroups: Ember.computed('model', function() {
 		var monthGroups = new Ember.A();
 		var entries = this.model;
