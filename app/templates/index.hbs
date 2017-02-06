@@ -11,4 +11,10 @@
 		<b>Homepage under construction</b>
 	</p>
 
+	{{#each model as |post|}}
+		<div class="blog-post">
+			<h2 class="blog-post-title">{{post.title}}</h2>
+		</div>
+	{{/each}}
+
 </div>

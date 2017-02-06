@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('about');
   this.route('projects');
   this.route('blog');
+  this.route('post', { path: '/post/:id' });
 });
 
 export default Router;
