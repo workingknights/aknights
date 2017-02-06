@@ -1,0 +1,11 @@
+<h2 class="blog-archives-title mb-2">Archives</h2>
+{{#each monthGroups as |groupEntry|}}
+	<p>{{groupEntry.month}} {{groupEntry.year}}</p>
+	<ul>
+	{{#each groupEntry.entries as |entry|}}
+		{{#link-to 'post' entry.id}}
+		<li class="blog-archive-link"><a href="#">{{entry.title}}</a></li>
+		{{/link-to}}
+	{{/each}}
+</ul>
+{{/each}}

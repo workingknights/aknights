@@ -1,7 +1,7 @@
 .site-wrapper-inner {
 	color: white;
   background-image: url(/images/water.jpg);
-	height: 280px;
+	height: 240px;
   width: 100%;
   background-size: 100%;
   background-attachment: scroll;
@@ -23,4 +23,38 @@ nav i {
 
 .page-container {
 	padding-top: 10px;
+}
+
+.card {
+	float: left;
+  width: 50%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.blog-main *, .blog-archives {
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+.blog-post-meta, .blog-archives-title {
+	font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.1818em;
+	text-transform: uppercase;
+	color: #767676;
+}
+
+.blog-archives-title {
+	color: #222;
+}
+
+.blog-archive-link {
+	font-size: 1rem;
+}
+
+.blog-post-title {
+	color: #555;
+	font-weight: 300;
+	font-size: 1.8rem;
 }

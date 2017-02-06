@@ -1,20 +1,33 @@
-<div class="site-wrapper-inner">
-
-	 {{!-- <div class="inner cover">
- <h1 class="cover-heading">Cover your page.</h1>
- <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-</div> --}}
+<div class="site-wrapper-inner mb-3">
 
 </div>
-<div class="container page-container">
-	<p>
-		<b>Homepage under construction</b>
-	</p>
 
-	{{#each model as |post|}}
-		<div class="blog-post">
-			<h2 class="blog-post-title">{{post.title}}</h2>
-		</div>
-	{{/each}}
+<div class="container page-container" id="blogContainer">
 
-</div>
+  <div class="row">
+		<!-- .blog-main -->
+    <div class="col-sm-8 blog-main">
+
+			<!-- .blog-post -->
+			{{#each model as |post|}}
+				{{#blog-post title=post.title dayMonthYear=post.dayMonthYear}}
+					{{{post.content}}}
+				{{/blog-post}}
+			{{/each}}
+			<!-- /.blog-post -->
+
+	 </div><!-- /.blog-main -->
+
+	 <div class="col-sm-3 offset-sm-1 blog-sidebar">
+      {{!-- <div class="sidebar-module sidebar-module-inset">
+        <h4>About</h4>
+        <p>A blog about programming and life in financial services.</p>
+      </div> --}}
+      <div class="blog-archives">
+        {{blog-archives model=model}}
+      </div>
+    </div><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</div><!-- /.container -->
