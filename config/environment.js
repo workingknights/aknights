@@ -6,7 +6,7 @@ module.exports = function(environment) {
 		environment: environment,
 		rootURL: '/',
 		locationType: 'auto',
-		wordpressHost: 'http://journal.aknights.com/',
+		wordpressHost: 'http://journal.aknights.com',
 		EmberENV: {
 			FEATURES: {
 				// Here you can enable experimental features on an ember canary build
