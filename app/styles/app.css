@@ -33,6 +33,10 @@ nav i {
   border: 0;
 }
 
+article.blog-post {
+
+}
+
 .blog-main *, .blog-archives {
 	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
@@ -46,7 +50,7 @@ nav i {
 }
 
 .blog-archives-title {
-	color: #222;
+	color: #333;
 }
 
 .blog-archive-link {
@@ -54,7 +58,7 @@ nav i {
 }
 
 .blog-post-title {
-	color: #555;
+	color: #000;
 	font-weight: 300;
 	font-size: 1.8rem;
 }
