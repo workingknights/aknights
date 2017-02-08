@@ -58,3 +58,9 @@ nav i {
 	font-weight: 300;
 	font-size: 1.8rem;
 }
+
+.img-circle {
+    border-radius: 50%;
+		max-width: 140px;
+		max-height: 140px;
+}
